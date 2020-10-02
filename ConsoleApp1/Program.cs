@@ -8,6 +8,7 @@ namespace ConsoleApp1
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             ShowMenu();
@@ -42,7 +43,18 @@ namespace ConsoleApp1
         }
         public void InputStudentData()
         {
-            
+            const int Max_Cnt = 100;
+            string[] StuDataArr = new string[Max_Cnt];
+            Console.WriteLine("1. 1학년\t 2. 2학년\t 3. 3학년\t 4. 4학년\t 5. 기타");
+            int year = int.Parse(Console.ReadLine());
+
+            switch (year)
+            {
+                case 1:
+                    Console.WriteLine();
+                default:
+                    break;
+            }
 
         }
         public void InputGradeData()
